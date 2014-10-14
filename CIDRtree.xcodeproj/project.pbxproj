@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		23289BDA158A751400B83D6D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23289BD9158A751400B83D6D /* UIKit.framework */; };
+		23289BDC158A751400B83D6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23289BDB158A751400B83D6D /* Foundation.framework */; };
+		23289BDE158A751400B83D6D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23289BDD158A751400B83D6D /* CoreGraphics.framework */; };
+		23289BE4158A751400B83D6D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 23289BE2158A751400B83D6D /* InfoPlist.strings */; };
+		23289BE6158A751400B83D6D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 23289BE5158A751400B83D6D /* main.m */; };
+		23289BEA158A751400B83D6D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 23289BE9158A751400B83D6D /* AppDelegate.m */; };
+		23289BED158A751400B83D6D /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23289BEB158A751400B83D6D /* MainStoryboard_iPhone.storyboard */; };
+		23289BF0158A751400B83D6D /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23289BEE158A751400B83D6D /* MainStoryboard_iPad.storyboard */; };
+		23289C07158A751400B83D6D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23289BD9158A751400B83D6D /* UIKit.framework */; };
+		23289C08158A751400B83D6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23289BDB158A751400B83D6D /* Foundation.framework */; };
+		23289C10158A751400B83D6D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 23289C0E158A751400B83D6D /* InfoPlist.strings */; };
+		23289C13158A751400B83D6D /* CIDRtreeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 23289C12158A751400B83D6D /* CIDRtreeTests.m */; };
+		2358D97A1683547B00B01F65 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2358D9791683547B00B01F65 /* Default-568h@2x.png */; };
+		2370BC34158A7D840062C6E7 /* TreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2370BC33158A7D840062C6E7 /* TreeViewController.m */; };
+		2370BC37158A7DBF0062C6E7 /* CIDRCalcViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2370BC36158A7DBF0062C6E7 /* CIDRCalcViewController.m */; };
+		23A515A7158E63FD001924D9 /* NetmaskPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A515A6158E63FD001924D9 /* NetmaskPickerViewController.m */; };
+		23ACD6EB158A77830012E1DC /* IPaddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 23ACD6E6158A77830012E1DC /* IPaddress.m */; };
+		23ACD6EC158A77830012E1DC /* IPplan.m in Sources */ = {isa = PBXBuildFile; fileRef = 23ACD6E8158A77830012E1DC /* IPplan.m */; };
+		23ACD6ED158A77830012E1DC /* MACaddr.m in Sources */ = {isa = PBXBuildFile; fileRef = 23ACD6EA158A77830012E1DC /* MACaddr.m */; };
+		23CB081D15A1BEA400FD1F55 /* cidrtool.png in Resources */ = {isa = PBXBuildFile; fileRef = 23CB081C15A1BEA400FD1F55 /* cidrtool.png */; };
+		23CB081F15A1BF4100FD1F55 /* CIDRtree-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 23CB081E15A1BF4100FD1F55 /* CIDRtree-72.png */; };
+		23CB082115A1BF5300FD1F55 /* CIDRtree@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 23CB082015A1BF5300FD1F55 /* CIDRtree@2x.png */; };
+		23CB082315A1BF5700FD1F55 /* CIDRtree.png in Resources */ = {isa = PBXBuildFile; fileRef = 23CB082215A1BF5700FD1F55 /* CIDRtree.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		23289C09158A751400B83D6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23289BCC158A751300B83D6D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23289BD4158A751400B83D6D;
+			remoteInfo = CIDRtree;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		23289BD5158A751400B83D6D /* CIDRtree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CIDRtree.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		23289BD9158A751400B83D6D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		23289BDB158A751400B83D6D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		23289BDD158A751400B83D6D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		23289BE1158A751400B83D6D /* CIDRtree-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CIDRtree-Info.plist"; sourceTree = "<group>"; };
+		23289BE3158A751400B83D6D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		23289BE5158A751400B83D6D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		23289BE7158A751400B83D6D /* CIDRtree-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CIDRtree-Prefix.pch"; sourceTree = "<group>"; };
+		23289BE8158A751400B83D6D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		23289BE9158A751400B83D6D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		23289BEC158A751400B83D6D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		23289BEF158A751400B83D6D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		23289C04158A751400B83D6D /* CIDRtreeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CIDRtreeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		23289C0D158A751400B83D6D /* CIDRtreeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CIDRtreeTests-Info.plist"; sourceTree = "<group>"; };
+		23289C0F158A751400B83D6D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		23289C11158A751400B83D6D /* CIDRtreeTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CIDRtreeTests.h; sourceTree = "<group>"; };
+		23289C12158A751400B83D6D /* CIDRtreeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CIDRtreeTests.m; sourceTree = "<group>"; };
+		2358D9791683547B00B01F65 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		2370BC32158A7D840062C6E7 /* TreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeViewController.h; sourceTree = "<group>"; };
+		2370BC33158A7D840062C6E7 /* TreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreeViewController.m; sourceTree = "<group>"; };
+		2370BC35158A7DBF0062C6E7 /* CIDRCalcViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIDRCalcViewController.h; sourceTree = "<group>"; };
+		2370BC36158A7DBF0062C6E7 /* CIDRCalcViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIDRCalcViewController.m; sourceTree = "<group>"; };
+		23A515A5158E63FD001924D9 /* NetmaskPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetmaskPickerViewController.h; sourceTree = "<group>"; };
+		23A515A6158E63FD001924D9 /* NetmaskPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetmaskPickerViewController.m; sourceTree = "<group>"; };
+		23ACD6E5158A77830012E1DC /* IPaddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPaddress.h; sourceTree = "<group>"; };
+		23ACD6E6158A77830012E1DC /* IPaddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPaddress.m; sourceTree = "<group>"; };
+		23ACD6E7158A77830012E1DC /* IPplan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPplan.h; sourceTree = "<group>"; };
+		23ACD6E8158A77830012E1DC /* IPplan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPplan.m; sourceTree = "<group>"; };
+		23ACD6E9158A77830012E1DC /* MACaddr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MACaddr.h; sourceTree = "<group>"; };
+		23ACD6EA158A77830012E1DC /* MACaddr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MACaddr.m; sourceTree = "<group>"; };
+		23CB081C15A1BEA400FD1F55 /* cidrtool.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cidrtool.png; sourceTree = "<group>"; };
+		23CB081E15A1BF4100FD1F55 /* CIDRtree-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CIDRtree-72.png"; sourceTree = "<group>"; };
+		23CB082015A1BF5300FD1F55 /* CIDRtree@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CIDRtree@2x.png"; sourceTree = "<group>"; };
+		23CB082215A1BF5700FD1F55 /* CIDRtree.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CIDRtree.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		23289BD2158A751400B83D6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23289BDA158A751400B83D6D /* UIKit.framework in Frameworks */,
+				23289BDC158A751400B83D6D /* Foundation.framework in Frameworks */,
+				23289BDE158A751400B83D6D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23289C00158A751400B83D6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23289C07158A751400B83D6D /* UIKit.framework in Frameworks */,
+				23289C08158A751400B83D6D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		23289BCA158A751300B83D6D = {
+			isa = PBXGroup;
+			children = (
+				2358D9791683547B00B01F65 /* Default-568h@2x.png */,
+				23CB082215A1BF5700FD1F55 /* CIDRtree.png */,
+				23CB082015A1BF5300FD1F55 /* CIDRtree@2x.png */,
+				23CB081E15A1BF4100FD1F55 /* CIDRtree-72.png */,
+				23CB081C15A1BEA400FD1F55 /* cidrtool.png */,
+				23289BDF158A751400B83D6D /* CIDRtree */,
+				23289C0B158A751400B83D6D /* CIDRtreeTests */,
+				23289BD8158A751400B83D6D /* Frameworks */,
+				23289BD6158A751400B83D6D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		23289BD6158A751400B83D6D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				23289BD5158A751400B83D6D /* CIDRtree.app */,
+				23289C04158A751400B83D6D /* CIDRtreeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		23289BD8158A751400B83D6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23289BD9158A751400B83D6D /* UIKit.framework */,
+				23289BDB158A751400B83D6D /* Foundation.framework */,
+				23289BDD158A751400B83D6D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		23289BDF158A751400B83D6D /* CIDRtree */ = {
+			isa = PBXGroup;
+			children = (
+				2370BC32158A7D840062C6E7 /* TreeViewController.h */,
+				2370BC33158A7D840062C6E7 /* TreeViewController.m */,
+				23A515A5158E63FD001924D9 /* NetmaskPickerViewController.h */,
+				23A515A6158E63FD001924D9 /* NetmaskPickerViewController.m */,
+				2370BC35158A7DBF0062C6E7 /* CIDRCalcViewController.h */,
+				2370BC36158A7DBF0062C6E7 /* CIDRCalcViewController.m */,
+				23289BE8158A751400B83D6D /* AppDelegate.h */,
+				23289BE9158A751400B83D6D /* AppDelegate.m */,
+				23289BEB158A751400B83D6D /* MainStoryboard_iPhone.storyboard */,
+				23ACD6EF158A78780012E1DC /* Models */,
+				23289BEE158A751400B83D6D /* MainStoryboard_iPad.storyboard */,
+				23289BE0158A751400B83D6D /* Supporting Files */,
+			);
+			path = CIDRtree;
+			sourceTree = "<group>";
+		};
+		23289BE0158A751400B83D6D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				23289BE1158A751400B83D6D /* CIDRtree-Info.plist */,
+				23289BE2158A751400B83D6D /* InfoPlist.strings */,
+				23289BE5158A751400B83D6D /* main.m */,
+				23289BE7158A751400B83D6D /* CIDRtree-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		23289C0B158A751400B83D6D /* CIDRtreeTests */ = {
+			isa = PBXGroup;
+			children = (
+				23289C11158A751400B83D6D /* CIDRtreeTests.h */,
+				23289C12158A751400B83D6D /* CIDRtreeTests.m */,
+				23289C0C158A751400B83D6D /* Supporting Files */,
+			);
+			path = CIDRtreeTests;
+			sourceTree = "<group>";
+		};
+		23289C0C158A751400B83D6D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				23289C0D158A751400B83D6D /* CIDRtreeTests-Info.plist */,
+				23289C0E158A751400B83D6D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		23ACD6EF158A78780012E1DC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				23ACD6E5158A77830012E1DC /* IPaddress.h */,
+				23ACD6E6158A77830012E1DC /* IPaddress.m */,
+				23ACD6E7158A77830012E1DC /* IPplan.h */,
+				23ACD6E8158A77830012E1DC /* IPplan.m */,
+				23ACD6E9158A77830012E1DC /* MACaddr.h */,
+				23ACD6EA158A77830012E1DC /* MACaddr.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		23289BD4158A751400B83D6D /* CIDRtree */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23289C16158A751400B83D6D /* Build configuration list for PBXNativeTarget "CIDRtree" */;
+			buildPhases = (
+				23289BD1158A751400B83D6D /* Sources */,
+				23289BD2158A751400B83D6D /* Frameworks */,
+				23289BD3158A751400B83D6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CIDRtree;
+			productName = CIDRtree;
+			productReference = 23289BD5158A751400B83D6D /* CIDRtree.app */;
+			productType = "com.apple.product-type.application";
+		};
+		23289C03158A751400B83D6D /* CIDRtreeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23289C19158A751400B83D6D /* Build configuration list for PBXNativeTarget "CIDRtreeTests" */;
+			buildPhases = (
+				23289BFF158A751400B83D6D /* Sources */,
+				23289C00158A751400B83D6D /* Frameworks */,
+				23289C01158A751400B83D6D /* Resources */,
+				23289C02158A751400B83D6D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23289C0A158A751400B83D6D /* PBXTargetDependency */,
+			);
+			name = CIDRtreeTests;
+			productName = CIDRtreeTests;
+			productReference = 23289C04158A751400B83D6D /* CIDRtreeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		23289BCC158A751300B83D6D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastTestingUpgradeCheck = 0600;
+				LastUpgradeCheck = 0600;
+			};
+			buildConfigurationList = 23289BCF158A751300B83D6D /* Build configuration list for PBXProject "CIDRtree" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 23289BCA158A751300B83D6D;
+			productRefGroup = 23289BD6158A751400B83D6D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				23289BD4158A751400B83D6D /* CIDRtree */,
+				23289C03158A751400B83D6D /* CIDRtreeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		23289BD3158A751400B83D6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23289BE4158A751400B83D6D /* InfoPlist.strings in Resources */,
+				23289BED158A751400B83D6D /* MainStoryboard_iPhone.storyboard in Resources */,
+				23289BF0158A751400B83D6D /* MainStoryboard_iPad.storyboard in Resources */,
+				23CB081D15A1BEA400FD1F55 /* cidrtool.png in Resources */,
+				23CB081F15A1BF4100FD1F55 /* CIDRtree-72.png in Resources */,
+				23CB082115A1BF5300FD1F55 /* CIDRtree@2x.png in Resources */,
+				23CB082315A1BF5700FD1F55 /* CIDRtree.png in Resources */,
+				2358D97A1683547B00B01F65 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23289C01158A751400B83D6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23289C10158A751400B83D6D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		23289C02158A751400B83D6D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		23289BD1158A751400B83D6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23289BE6158A751400B83D6D /* main.m in Sources */,
+				23289BEA158A751400B83D6D /* AppDelegate.m in Sources */,
+				23ACD6EB158A77830012E1DC /* IPaddress.m in Sources */,
+				23ACD6EC158A77830012E1DC /* IPplan.m in Sources */,
+				23ACD6ED158A77830012E1DC /* MACaddr.m in Sources */,
+				2370BC34158A7D840062C6E7 /* TreeViewController.m in Sources */,
+				2370BC37158A7DBF0062C6E7 /* CIDRCalcViewController.m in Sources */,
+				23A515A7158E63FD001924D9 /* NetmaskPickerViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23289BFF158A751400B83D6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23289C13158A751400B83D6D /* CIDRtreeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		23289C0A158A751400B83D6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23289BD4158A751400B83D6D /* CIDRtree */;
+			targetProxy = 23289C09158A751400B83D6D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		23289BE2158A751400B83D6D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23289BE3158A751400B83D6D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		23289BEB158A751400B83D6D /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23289BEC158A751400B83D6D /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		23289BEE158A751400B83D6D /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23289BEF158A751400B83D6D /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		23289C0E158A751400B83D6D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23289C0F158A751400B83D6D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		23289C14158A751400B83D6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		23289C15158A751400B83D6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		23289C17158A751400B83D6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CIDRtree/CIDRtree-Prefix.pch";
+				INFOPLIST_FILE = "CIDRtree/CIDRtree-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		23289C18158A751400B83D6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CIDRtree/CIDRtree-Prefix.pch";
+				INFOPLIST_FILE = "CIDRtree/CIDRtree-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		23289C1A158A751400B83D6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CIDRtree.app/CIDRtree";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CIDRtree/CIDRtree-Prefix.pch";
+				INFOPLIST_FILE = "CIDRtreeTests/CIDRtreeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		23289C1B158A751400B83D6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CIDRtree.app/CIDRtree";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CIDRtree/CIDRtree-Prefix.pch";
+				INFOPLIST_FILE = "CIDRtreeTests/CIDRtreeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		23289BCF158A751300B83D6D /* Build configuration list for PBXProject "CIDRtree" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23289C14158A751400B83D6D /* Debug */,
+				23289C15158A751400B83D6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23289C16158A751400B83D6D /* Build configuration list for PBXNativeTarget "CIDRtree" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23289C17158A751400B83D6D /* Debug */,
+				23289C18158A751400B83D6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23289C19158A751400B83D6D /* Build configuration list for PBXNativeTarget "CIDRtreeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23289C1A158A751400B83D6D /* Debug */,
+				23289C1B158A751400B83D6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 23289BCC158A751300B83D6D /* Project object */;
+}
