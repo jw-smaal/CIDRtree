@@ -3,7 +3,7 @@
 //  IPcalculator
 //
 //  Created by Jan-Willem Smaal on 10/6/11.
-//  Copyright 2011 Communicatie VolZ.in All rights reserved.
+//  Copyright 2012 Communicatie VolZ.in All rights reserved.
 //
 
 #import "IPAddress.h"
