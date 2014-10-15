@@ -164,6 +164,7 @@
 	
 	// Do any additional setup after loading the view from its nib.
 	//// self.contentSizeForViewInPopover=CGSizeMake(300.0,200.0);
+	[self.view setBackgroundColor:[UIColor whiteColor]];
 	
 	
 	// Fill the netmask array for the chooser.

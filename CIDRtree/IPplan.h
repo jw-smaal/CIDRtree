@@ -44,11 +44,11 @@
 #pragma mark Instance Methods
 -(instancetype)initWithParentBlock:(IPAddress *)ipa 
 				  childs:(uint32_t)childsarg 
-				   hosts:(uint32_t)hostsarg NS_DESIGNATED_INITIALIZER;	
+				   hosts:(uint32_t)hostsarg ;
 
 -(instancetype)initWithParentBlock:(IPAddress *)ipa 
 				  childs:(uint32_t)childsarg 
-				 bitmask:(uint32_t)bitmask NS_DESIGNATED_INITIALIZER;
+				 bitmask:(uint32_t)bitmask ;
 
 -(void)CalculateAndAssign;
 @property (NS_NONATOMIC_IOSONLY, readonly) uint32_t childNetworkBitMask;
