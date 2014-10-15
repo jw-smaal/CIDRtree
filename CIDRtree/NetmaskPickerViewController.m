@@ -107,7 +107,7 @@
 			return [NSString stringWithFormat:@"/%ld", (long)row];
 			break; // never reached but who cares 			
 		case NETMASK:	
-			ipa = [NetmaskArray objectAtIndex:row];
+			ipa = NetmaskArray[row];
 			return ipa.maskText;
 			break; // Never reached.
 		default:
@@ -124,7 +124,7 @@
 	IPAddress *ipa;
 	
 	// Vraag om een pointer uit de array.
-	ipa = [NetmaskArray objectAtIndex:row];
+	ipa = NetmaskArray[row];
 
 	// De gebruiker heeft deze waarde gekozen, 
 	numberOfBits = ipa.bitmask;

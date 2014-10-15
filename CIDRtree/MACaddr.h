@@ -55,6 +55,6 @@
  */
 #pragma mark Instance methods
 -(void) assignMulticastMACaddr:(IPAddress *) ipaddr;
--(NSString *) Text;
+@property (NS_NONATOMIC_IOSONLY, readonly, copy) NSString *Text;
 
 @end

@@ -42,19 +42,19 @@
 +(uint32_t)clearBits:(uint32_t)lsb msb:(uint32_t)msb inNumber:(uint32_t)number;
 
 #pragma mark Instance Methods
--(id)initWithParentBlock:(IPAddress *)ipa 
+-(instancetype)initWithParentBlock:(IPAddress *)ipa 
 				  childs:(uint32_t)childsarg 
-				   hosts:(uint32_t)hostsarg;	
+				   hosts:(uint32_t)hostsarg NS_DESIGNATED_INITIALIZER;	
 
--(id)initWithParentBlock:(IPAddress *)ipa 
+-(instancetype)initWithParentBlock:(IPAddress *)ipa 
 				  childs:(uint32_t)childsarg 
-				 bitmask:(uint32_t)bitmask;
+				 bitmask:(uint32_t)bitmask NS_DESIGNATED_INITIALIZER;
 
 -(void)CalculateAndAssign;
--(uint32_t)childNetworkBitMask;
--(uint32_t)childNetworkNetMask;
+@property (NS_NONATOMIC_IOSONLY, readonly) uint32_t childNetworkBitMask;
+@property (NS_NONATOMIC_IOSONLY, readonly) uint32_t childNetworkNetMask;
 // -(NSString *)description; // Already in NSOBJECT 
--(NSString *)Text;
+@property (NS_NONATOMIC_IOSONLY, readonly, copy) NSString *Text;
 
 
 @end

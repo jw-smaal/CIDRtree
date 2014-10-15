@@ -23,7 +23,7 @@ static IPAddress *sharedIPAddress = nil;
  * Instance methods 
  * ----------------
  */
--(id)init {
+-(instancetype)init {
 	self = [super init];
 	
 	if(self){
@@ -32,7 +32,7 @@ static IPAddress *sharedIPAddress = nil;
 	return self;
 }
 
--(id)initWithData:(uint32_t) ipa
+-(instancetype)initWithData:(uint32_t) ipa
 				mask:(uint32_t) bitmaska{
 	self.ip = ipa;
 	self.bitmask = bitmaska;
@@ -321,10 +321,10 @@ static IPAddress *sharedIPAddress = nil;
  * @param ip ip address
  */
 +(NSString *) toDottedDecimal:(uint32_t) ip{
-	uint32_t p1 = (0xff000000&ip)>>24;
-	uint32_t p2 = (0x00ff0000&ip)>>16;
-	uint32_t p3 = (0x0000ff00&ip)>>8;
-	uint32_t p4 = 0x000000ff&ip;
+	uint8_t p1 = (0xff000000&ip)>>24;
+	uint8_t p2 = (0x00ff0000&ip)>>16;
+	uint8_t p3 = (0x0000ff00&ip)>>8;
+	uint8_t p4 = 0x000000ff&ip;
 	
 	return [NSString stringWithFormat:@"%d.%d.%d.%d", 
 			p1, p2, p3, p4];
@@ -349,10 +349,10 @@ static IPAddress *sharedIPAddress = nil;
 		return 0;	
 	}
 	
-	stra = [tmparr objectAtIndex:0];
-	strb = [tmparr objectAtIndex:1];
-	strc = [tmparr objectAtIndex:2];
-	strd = [tmparr objectAtIndex:3];
+	stra = tmparr[0];
+	strb = tmparr[1];
+	strc = tmparr[2];
+	strd = tmparr[3];
 	
 	ret = 0xff000000&([stra intValue]<<24);
 	ret = ret | (0x00ff0000&([strb intValue]<<16));

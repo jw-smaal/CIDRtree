@@ -71,7 +71,7 @@
 		vc = nil;
     }
 	if ([[segue identifier] isEqualToString:@"maskTOpopover"]) {
-        [[segue destinationViewController] setDelegate:self];
+        [[segue destinationViewController] setDelegate:(id)self];
         
         if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
             UIPopoverController *popoverController = [(UIStoryboardPopoverSegue *)segue popoverController];
@@ -154,7 +154,7 @@
  * View lifecycle
  */
 #pragma mark View lifecycle
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {

@@ -20,7 +20,7 @@ static IPplan *sharedIPplan = nil;
 
 
 #pragma mark Constructors
--(id)init{	
+-(instancetype)init{	
 	self = [super init];
 	
 	if(self){
@@ -45,7 +45,7 @@ static IPplan *sharedIPplan = nil;
 }
 
 
--(id)initWithParentBlock:(IPAddress *)ipa 
+-(instancetype)initWithParentBlock:(IPAddress *)ipa 
 				  childs:(uint32_t)childsarg 
 				   hosts:(uint32_t)hostsarg{	
 	self = [super init];
@@ -64,7 +64,7 @@ static IPplan *sharedIPplan = nil;
 }
 
 
--(id)initWithParentBlock:(IPAddress *)ipa 
+-(instancetype)initWithParentBlock:(IPAddress *)ipa 
 				childs:(uint32_t)childsarg 
 				bitmask:(uint32_t)bitmask{	
 	self = [super init];
