@@ -139,6 +139,7 @@
 	ipAddressText.text = ipAddr.ipText;
 	ipLabel.text = ipAddr.networkText;
 	maskLabel.text = ipAddr.maskText;
+	cidrmaskLabel.text = [NSString stringWithFormat:@"/%d", ipAddr.bitmask];
 	lowIPLabel.text = ipAddr.firstText;
 	highIPLabel.text = ipAddr.lastText;
 	hostsLabel.text = [NSString stringWithFormat:@"%0.f", ipAddr.numberOfHosts];
@@ -146,7 +147,7 @@
 	hostMaskLabel.text = ipAddr.hostMaskText;
 	
 	//maskLabel.text = [NSString stringWithFormat:@"/%d (%@)", ipAddr.bitmask, ipAddr.maskText];
-	maskButton.titleLabel.text = [NSString stringWithFormat:@"/%d", ipAddr.bitmask];
+	//maskButton.titleLabel.text = [NSString stringWithFormat:@"/%d", ipAddr.bitmask];
 }
 
 

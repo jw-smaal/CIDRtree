@@ -30,6 +30,7 @@
 		
 		__weak IBOutlet UITableView *ipTableView;
 		__weak IBOutlet UILabel *maskLabel;
+		__weak IBOutlet UILabel *cidrmaskLabel;
 		__weak IBOutlet UILabel *ipLabel;
 		__weak IBOutlet UILabel *lowIPLabel;
 		__weak IBOutlet UILabel *highIPLabel;

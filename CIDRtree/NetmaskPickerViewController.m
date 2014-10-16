@@ -81,7 +81,7 @@
 			return 60;			
 			break;
 		case NETMASK:
-			return 180;
+			return 200 ;
 			break;
 		default:
 			return 200;
